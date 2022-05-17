@@ -25,14 +25,6 @@ body {
     margin-right: auto;
 }
 
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-
-
 @media (min-width: 992px) {
     .container {
         width: 970px;
@@ -44,6 +36,14 @@ body {
         width: 750px;
     }
 }
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
 
 .main {
     padding-top: var(--paddingpage);
@@ -63,7 +63,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .orange {
@@ -75,14 +75,14 @@ body {
     color: var(--primaryorange);
 }
 
-@media (min-width: 620px) {
+@media (min-width: 1200px) {
     .orange {
         border-radius: 10px 0 0 10px;
     }
 }
 
 
-@media (max-width: 446px) {
+@media (max-width: 767px) {
     .orange {
         border-radius: 10px 10px 0 0;
     }
@@ -100,13 +100,13 @@ body {
     background-color: var(--primarydarkcyan);
 }
 
-@media (min-width: 620px) {
+@media (min-width: 1200px) {
     .darkcyan {
         border-radius: 0 10px 10px 0;
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 767px) {
     .darkcyan {
         border-radius: 0 0 10px 10px;
     }
@@ -117,7 +117,7 @@ body {
 }
 
 .box {
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 
 .box img {
@@ -136,7 +136,8 @@ p {
     color: var(--neutraltransparentwhite);
     line-height: 1.8;
     font-weight: 400;
-    margin: 20px 0 20px 10px;
+    font-size: 20px;
+    margin: 20px 110px 20px 10px;
 }
 
 a {
@@ -150,6 +151,7 @@ a {
     border: 2px solid var(--neutrallightgray);
     transition: .3s;
     font-weight: 400;
+    font-size: 20px;
 }
 
 a:hover {
